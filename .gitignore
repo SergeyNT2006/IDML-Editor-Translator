@@ -1,0 +1,53 @@
+# --- Public storefront repo: keep only buyer-facing files tracked ---
+# Working tree stays on disk; these paths are local-only (not pushed).
+
+# App source & tooling
+/src/
+/src-tauri/
+/static/
+/node_modules/
+/package.json
+/package-lock.json
+/svelte.config.js
+/tsconfig.json
+/vite.config.js
+/vite.config.js.timestamp-*
+/vite.config.ts.timestamp-*
+/run-dev.bat
+
+# Dev samples, tests, packaging
+/examples/
+/fixtures/
+/packaging/
+
+# Build / local junk
+.DS_Store
+/build
+/.svelte-kit
+/package
+/data
+/dist
+.env
+.env.*
+!.env.example
+*.log
+*.bak
+*.zip
+/_archive
+/legacy
+.vscode/
+/XliffDesk-portable-*
+/IDML-Editor-Translator-portable-*
+src-tauri/target
+
+# Internal product notes (local only; not for buyers)
+/docs/DEV.md
+/docs/PLAN-IDML.md
+/docs/SESSION-STATUS.md
+/docs/STORE_LISTING.md
+/docs/Links to payhip.com.txt
+/docs/AUDIT.md
+/docs/PLAN.md
+/docs/RECOVERY.md
+/docs/*.indd
+/docs/example_readme.idml
